@@ -239,7 +239,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let ApiUrlService = class ApiUrlService {
-    constructor() { }
+    constructor() {
+        this.url = 'https://esquare-rectification.herokuapp.com/apis';
+    }
 };
 ApiUrlService.ctorParameters = () => [];
 ApiUrlService = (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__decorate)([
@@ -473,7 +475,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let ApiUrlService = class ApiUrlService {
-    constructor() { }
+    constructor() {
+        this.url = 'https://esquare-rectification.herokuapp.com/apis';
+    }
 };
 ApiUrlService.ctorParameters = () => [];
 ApiUrlService = (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__decorate)([
