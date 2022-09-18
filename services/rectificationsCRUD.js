@@ -27,8 +27,8 @@ const DeleteRectificationByIdFromDB = (id, cb) => {
     })
 }
 const UpdateRectificationById = (data, cb) => {
-    let projData = data;
-    rectificationModel.updateOne({ _id: data._id }, projData, (err, result) => {
+    let rectData = data;
+    rectificationModel.updateOne({ _id: data._id }, rectData, (err, result) => {
         if (err) cb(null, { success: false, data: err, msg: "Rectification update failed." }); //null, { success: false, data: err, msg: "Student fetch failed." }
         else {
             cb(null, { success: true, data: result, msg: "Rectification updated successfully." }); //null, { success: true, data: result, msg: "Student fetched successfully." }

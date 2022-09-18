@@ -7,6 +7,18 @@ const ulbURLSModel = mongoose.Schema({
     ulb_url: {
         type: String
     },
+    total_led_lamps: {
+        type: Number
+    },
+    light_defective: {
+        type: Number
+    },
+    installed_ccms: {
+        type: String
+    },
+    load: {
+        type: String
+    },
     ulb_url_satus: {
         type: Boolean,
         default: true

@@ -27,8 +27,8 @@ const DeleteULBUrlByIdFromDB = (id, cb) => {
     })
 }
 const UpdateULBUrlById = (data, cb) => {
-    let projData = data;
-    ulbURLsModel.updateOne({ _id: data._id }, projData, (err, result) => {
+    let ULBData = data;
+    ulbURLsModel.updateOne({ _id: data._id }, ULBData, (err, result) => {
         if (err) cb(null, { success: false, data: err, msg: "ULBUrl update failed." }); //null, { success: false, data: err, msg: "Student fetch failed." }
         else {
             cb(null, { success: true, data: result, msg: "ULBUrl updated successfully." }); //null, { success: true, data: result, msg: "Student fetched successfully." }
